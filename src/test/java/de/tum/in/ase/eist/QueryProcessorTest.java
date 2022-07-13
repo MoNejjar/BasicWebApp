@@ -29,5 +29,11 @@ class QueryProcessorTest {
 			fail("Your QueryProcessor should not be case sensitive.");
 		}
 	}
-
+	@Test
+	void testHello(){
+		String actual = queryProcessor.process("hello");
+		if (!actual.contains("playwright")) {
+			fail("Your QueryProcessor can't wave back.");
+		}
+	}
 }
