@@ -15,11 +15,12 @@ public class QueryProcessor {
             return "MyTeam";
         } else if (query.contains("hello")) {
             return "hi :)";
-        } else if (query.contains("Hello")) {
-            return "Hi :)";
+        } else if (query.contains("how are you?")) {
+            return "i'm fine :)";
         } else if (query.contains("what's your name?")) {
             return "I am thee ancient one";
         }
+
         else return"";
     }
 }
